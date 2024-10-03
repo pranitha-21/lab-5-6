@@ -1,13 +1,16 @@
 #include<stdio.h>
 int main()
 {
-	int a[10],i,n1=0,n2=0,n3=0,n4=0,n5=0,w=0;
+	int n;
+	printf("No. of voters:");
+	scanf("%d",&n);
+	int a[100],i,n1=0,n2=0,n3=0,n4=0,n5=0,w=0;
 	printf("enter your vote as number");
-	for(i=0;i<10;i++)
+	for(i=0;i<n;i++)
 	{
 		scanf("%d",&a[i]);
 	}
-	for(i=0;i<10;i++)
+	for(i=0;i<n;i++)
 	{
 	switch(a[i])
 	{
@@ -15,7 +18,7 @@ int main()
 		break;
 		case 2:n2=n2+1;
 		break;
-		case 3:n3=n2+1;
+		case 3:n3=n3+1;
 		break;
 		case 4:n4=n4+1;
 		break;
